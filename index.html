@@ -12,7 +12,7 @@
 
 <body>
   <main>
-    <form>
+    <form action="https://dev.cotenfrontend.pl" method="post">
       <p>
         <label for="name">Your name:</label><br>
         <input name="name" id="name" placeholder="please enter your name">
@@ -49,17 +49,23 @@
         <input type="email" name="surname" id="surname" placeholder="please enter your email">
       </label>
       <p>
+      </p>
+      <label for="password">Your password:<br>
+        <input type="password" name="password" id="password" placeholder="please enter your password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+          ">
+      </label>
+      <p>
         <p>
           <label for="range">Range:<br>
             <input type="range" id="range" min="0" max="100" value="20">
           </label>
         </p>
-          <label for="age">Textarea:</label><br>
-          <textarea  name="textarea" id="textarea4">tres tresc tresc</textarea>
-          </p>
+        <label for="age">Textarea:</label><br>
+        <textarea name="textarea" id="textarea4">tres tresc tresc</textarea>
+      </p>
       <legend>Consents</legend>
       <p>
-        <input type="checkbox" name="checkbox" id="checkbox1">
+        <input type="checkbox" name="checkbox" id="checkbox1" required>
         <label for="checkbox">I hereby give my consent for processing my personal data included in this form</label>
       </p>
       <p>
@@ -67,8 +73,8 @@
         <label for="checkbox">I agree to receive the newsletter</label>
       </p>
       <p>
-          <input type="submit" name="submit" id="submit" value="Submit!">
-        </p>
+        <input type="submit" name="submit" id="submit" value="Submit!">
+      </p>
 
     </form>
   </main>
