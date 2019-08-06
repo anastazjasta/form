@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #001817;  
+  font-family: Helvetica, sans-serif;
+  color: #ffb997;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  padding: 48px;
+  position: relative;
+}
